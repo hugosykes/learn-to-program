@@ -32,22 +32,25 @@ class OrangeTree
 		end
 		passageOfTime
 	end
+
 private
+
 	def passageOfTime
 		if @months < 3
 			@months += 1
 		else
-			oneYearPasses
 			@months = 0
+			oneYearPasses
 		end
 		if @age > 3
-			@numberOfOranges += (age - 2)
+			@numberOfOranges += (@age - 2)
 		end
-		if @age == 10
+		if @age > 10
 			puts "The time has come for this tree to pass..."
 			exit
 		end
 	end
+
 end
 
 orange = OrangeTree.new
@@ -61,6 +64,24 @@ orange.oneYearPasses
 orange.height
 orange.countTheOranges
 orange.pickAnOrange
+orange.oneYearPasses
+orange.height
+orange.countTheOranges
+orange.pickAnOrange
+orange.height
+orange.oneYearPasses
+orange.oneYearPasses
+orange.oneYearPasses
+orange.height
+orange.countTheOranges
+orange.pickAnOrange
+orange.oneYearPasses
+orange.oneYearPasses
+orange.oneYearPasses
+orange.oneYearPasses
+orange.oneYearPasses
+
+orange.oneYearPasses
 orange.oneYearPasses
 orange.oneYearPasses
 orange.oneYearPasses
